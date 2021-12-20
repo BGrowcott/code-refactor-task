@@ -1,27 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Code Refactor Assignment</title>
-</head>
-<body>
-    <header></header>
+  </head>
+  <body>
+    <header>
+      <img src="assets/images/bglogo2.jpg" alt="Ben Growcott logo" />
+    </header>
 
     <main>
-        <article>
-            <h1>Code Refactor Assignment</h1>
-            <p>
-                In this assignment I was instructed to take existing code and improve it.
+      <article id="taskcontainer">
+        <h1>Code Refactor Assignment</h1>
+
+        <section id="task">
+          <article>
+            <p id="para1">
+              In this assignment I was instructed to take existing code and
+              improve it - without making any actual changes to the content. I
+              was given the following acceptance criteria:
             </p>
-        </article>
-        <section>
-            
+            <h2>As a marketing agency</h2>
+            <p id="para2">
+              I WANT a codebase that follows accessibility standards<br />
+              SO THAT our own site is optimized for search engines.
+            </p>
+            <h2>Acceptance criteria</h2>
+            <ul>
+              <li>GIVEN a webpage meets accessibility standards</li>
+              <li>WHEN I view the source code</li>
+              <li>THEN I find semantic HTML elements</li>
+              <li>WHEN I view the structure of the HTML elements</li>
+              <li>
+                THEN I find that the elements follow a logical structure
+                independent of styling and positioning
+              </li>
+              <li>WHEN I view the icon and image elements</li>
+              <li>THEN I find accessible alt attributes</li>
+              <li>WHEN I view the heading attributes</li>
+              <li>THEN they fall in sequential order</li>
+              <li>WHEN I view the title element</li>
+              <li>THEN I find a concise, descriptive title</li>
+            </ul>
+          </article>
+          <figure>
+            <img
+              id="screenshot"
+              src="assets/images/MarketingAgency-Screenshot.png"
+              alt="Screen shot of deployed website"
+            />
+          </figure>
         </section>
+      </article>
+
+      <section class="comparisons">
+        <h3>Semantic HTML</h3>
+        <div class="examples">
+          <h4>Code Before</h4>
+          <img
+            src="assets/images/semantics.png"
+            alt="code snippet for html semantic elements"
+          />
+        </div>
+        <div class="examples">
+          <h4>Code After</h4>
+          <img
+            src="assets/images/semantics2.png"
+            alt="Same code snippet improved"
+          />
+        </div>
+        <div class="descriptions">
+          <p>
+            Notice the tags used for the code. Before refactoring the code we
+            have two elements both called<code> &lt;div&gt; </code>After the
+            refactor these tags are changed to semantic html elements<code> &lt;header&gt; </code>and<code> &lt;nav&gt; </code>Using
+            semantic html like this improves the accessibility of a webpage as
+            well as making your code easier to read. I replaced all generic
+            <code> &lt;div&gt; </code> tags with logical semantic tags.
+          </p>
+        </div>
+      </section>
     </main>
 
+    <!-- GIVEN a webpage meets accessibility standards
+WHEN I view the source code x 
+THEN I find semantic HTML elements x
+WHEN I view the structure of the HTML elements
+THEN I find that the elements follow a logical structure independent of styling and positioning
+WHEN I view the icon and image elements
+THEN I find accessible alt attributes
+WHEN I view the heading attributes
+THEN they fall in sequential order
+WHEN I view the title element
+THEN I find a concise, descriptive title
+``` -->
+
     <footer></footer>
-    
-</body>
+  </body>
 </html>

@@ -1,0 +1,109 @@
+:root {
+    --borders: 2px solid black;
+}
+
+body {
+    background-color: rgb(215, 233, 253);
+}
+
+header img {
+    width:50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 160%;
+    margin: 30px 0px;
+    flex: 100%;
+}
+
+#taskcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#task {
+    display: flex;
+    line-height: 130%;
+    margin: 30px;
+    align-items: flex-start;
+    font-size: 120%;
+    max-width: 856px;
+}
+
+
+#para1 {
+    margin-bottom: 8%;
+}
+
+#para2, h2, ul {
+    margin-bottom: 5%;
+}
+
+ul {
+}
+
+li {
+    padding-left: 5px;
+    padding-right: 2px;
+}
+
+li:nth-child(2n+0) {
+    background-color: rgb(236, 197, 248);
+}
+
+li:nth-child(2n+1) {
+    background-color: rgb(208, 255, 245);
+}
+
+#task article {
+    width: 50%;
+    border: var(--borders);
+    background-color: rgb(208, 255, 245);
+    padding-left: 5px;
+}
+
+#screenshot {
+    width: 100%;
+}
+
+.comparisons {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3, h4 {
+    width: 100%;
+    text-align: center;
+}
+
+.examples {
+    width: 45%;
+    background-color: #1e1e1e;
+    color:aqua;
+    margin: 10px;
+}
+
+.examples img {
+    width: 100%;
+}
+
+code {
+    font-family: monospace;
+    font-size: 130%;
+}
+
+.descriptions {
+    text-align: left;
+    width: 80%;
+    font-size: 120%;
+}
